@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,10 +23,11 @@
 		8AE15E032A98B493009D9641 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8AE15E072A98BF87009D9641 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		8AE15E092A98BF89009D9641 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		8AE15E0A2A98C2ED009D9641 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		8AE15E0C2A98C2F6009D9641 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/Info.plist; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* iLikeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLikeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2A5F20A1F4A9144005CD714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2A5F20F1F4A9144005CD714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +71,7 @@
 				D2A5F2071F4A9144005CD714 /* Main.storyboard */,
 				D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */,
 				D2A5F20A1F4A9144005CD714 /* Assets.xcassets */,
-				D2A5F20F1F4A9144005CD714 /* Info.plist */,
+				8AE15E0B2A98C2ED009D9641 /* Info.plist */,
 			);
 			path = iLikeIt;
 			sourceTree = "<group>";
@@ -101,8 +102,9 @@
 		D2A5F1F81F4A9143005CD714 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
 					D2A5F1FF1F4A9144005CD714 = {
@@ -176,6 +178,15 @@
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
+		8AE15E0B2A98C2ED009D9641 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE15E0A2A98C2ED009D9641 /* en */,
+				8AE15E0C2A98C2F6009D9641 /* es */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
 		D2A5F2071F4A9144005CD714 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,6 +214,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -210,8 +222,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -237,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +275,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -268,8 +283,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -289,10 +306,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -303,7 +321,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/iLikeIt/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.iLikeIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -318,7 +339,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/iLikeIt/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.iLikeIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
