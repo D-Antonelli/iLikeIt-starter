@@ -45,7 +45,8 @@ class MainViewController: UIViewController {
     guard salesCountLabel.isHidden else { return }
     let period = getMonthCount()
     let formatString = NSLocalizedString("You have sold 1000 apps in %d months", comment: "Time to sell 1000 apps")
-    salesCountLabel.text = String.localizedStringWithFormat(formatString, period)
+    let quantity = NumberFormatter.localizedString(from: 1000, number: .decimal)
+    salesCountLabel.text = String.localizedStringWithFormat(formatString, quantity, period)
     //    salesCountLabel.text = "You have sold 1000 apps in \(period) months"
     salesCountLabel.isHidden = false
     imageView.isHidden = false
