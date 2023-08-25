@@ -4,8 +4,8 @@
 <dict>
 	<key>You have sold 1000 apps in %d months</key>
 	<dict>
-		<key>You have sold %@ apps in %#@months@</key>
-		<string>%#@VARIABLE@</string>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Has vendido %@ aplicaciones en %#@months@</string>
 		<key>months</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>
@@ -15,7 +15,7 @@
 			<key>zero</key>
 			<string></string>
 			<key>one</key>
-			<string>%d month</string>
+			<string>%d mes</string>
 			<key>two</key>
 			<string></string>
 			<key>few</key>
@@ -23,7 +23,7 @@
 			<key>many</key>
 			<string></string>
 			<key>other</key>
-			<string>%d months</string>
+			<string>%d meses</string>
 		</dict>
 	</dict>
 </dict>
