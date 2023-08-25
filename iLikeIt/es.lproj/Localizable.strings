@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  iLikeIt
+
+  Created by Derya Antonelli on 25/08/2023.
+  Copyright © 2023 Razeware. All rights reserved.
+*/
+
+"You have sold 1000 apps in %d months" = "Has vendido 1000 aplicaciones en %d meses";
+"You like?" = "¿Es bueno?";
